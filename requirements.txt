@@ -1,5 +1,17 @@
+# Rasa Core & NLU
 rasa==3.6.20
-rasa-sdk==3.6.1
-requests
-gunicorn
-pandas
+rasa-sdk==3.6.20
+
+# WhatsApp integration
+twilio==8.12.1
+
+# ngrok for exposing local server
+pyngrok==5.2.1
+
+# Optional: YAML parsing, HTTP requests
+PyYAML==6.0
+requests==2.31.0
+
+# Optional: For handling data & preprocessing
+pandas==2.1.1
+numpy==1.26.0
