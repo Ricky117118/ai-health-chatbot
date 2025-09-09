@@ -6,18 +6,38 @@ nlu:
     - hi
     - hello
     - hey
+    - good morning
+    - good evening
 
 - intent: goodbye
   examples: |
     - bye
     - goodbye
+    - see you
+    - see you later
+    - take care
 
-- intent: ask_symptoms
+- intent: how_are_you
   examples: |
-    - What are the symptoms of [malaria](disease)?
-    - Tell me signs of [dengue](disease).
+    - how are you
+    - how's it going
+    - how do you do
+    - what's up
 
-- intent: ask_vaccine
+- intent: disease_symptoms
   examples: |
-    - When should I take [polio](vaccine) vaccine?
-    - Tell me about [covid](vaccine) vaccination
+    - what are the symptoms of malaria
+    - tell me signs of covid
+    - how do I know if I have dengue
+    - what are the symptoms of flu
+    - I have a headache and fever, what could it be
+    - tell me the signs of tuberculosis
+    - I feel tired and have muscle pain
+    - I am feverish, what should I do
+
+- intent: health_advice
+  examples: |
+    - what should I do if I have a fever
+    - how can I reduce my headache
+    - how to treat cold
+    - what medicine should I take for cough
