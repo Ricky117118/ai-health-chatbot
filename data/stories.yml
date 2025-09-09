@@ -1,19 +1,26 @@
 version: "3.1"
 
 stories:
-- story: greet and goodbye
-  steps:
-    - intent: greet
-    - action: utter_greet
-    - intent: goodbye
-    - action: utter_goodbye
+  - story: greet and ask malaria symptoms
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: symptoms_malaria
+      - action: utter_ask_symptoms_malaria
 
-- story: ask symptoms
-  steps:
-    - intent: ask_symptoms
-    - action: action_provide_symptoms
+  - story: greet and ask covid symptoms
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: symptoms_covid
+      - action: utter_ask_symptoms_covid
 
-- story: ask vaccine schedule
-  steps:
-    - intent: ask_vaccine
-    - action: action_vaccine_schedule
+  - story: goodbye conversation
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: default fallback
+    steps:
+      - intent: unknown
+      - action: utter_default
