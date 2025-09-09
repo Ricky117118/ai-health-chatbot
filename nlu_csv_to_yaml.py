@@ -1,8 +1,8 @@
 import pandas as pd
 import yaml
 
-# Load CSV
-df = pd.read_csv("nlu_data.csv")
+# Load CSV from csv_data folder
+df = pd.read_csv("csv_data/nlu_data.csv")
 
 # Prepare Rasa NLU data
 nlu_data = {"version": "3.1", "nlu": []}
