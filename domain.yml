@@ -3,25 +3,27 @@ version: "3.1"
 intents:
   - greet
   - goodbye
-  - ask_symptoms
-  - ask_vaccine
-
-entities:
-  - disease
-  - vaccine
-
-slots:
-  disease:
-    type: text
-  vaccine:
-    type: text
+  - inform
+  - symptoms_malaria
+  - symptoms_covid
+  - unknown
 
 responses:
   utter_greet:
-    - text: "Hello! I am your health assistant. How can I help you today?"
+    - text: "Hey! How are you?"
+  
   utter_goodbye:
-    - text: "Stay healthy! Goodbye 👋"
+    - text: "Bye"
+  
+  utter_ask_symptoms_malaria:
+    - text: "Common symptoms of malaria include fever, chills, headache, nausea, and muscle pain."
 
-actions:
-  - action_provide_symptoms
-  - action_vaccine_schedule
+  utter_ask_symptoms_covid:
+    - text: "Common symptoms of COVID-19 include fever, cough, fatigue, loss of taste or smell, and difficulty breathing."
+
+  utter_default:
+    - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
