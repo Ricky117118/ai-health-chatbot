@@ -1,0 +1,27 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - ask_symptoms
+  - ask_vaccine
+
+entities:
+  - disease
+  - vaccine
+
+slots:
+  disease:
+    type: text
+  vaccine:
+    type: text
+
+responses:
+  utter_greet:
+    - text: "Hello! I am your health assistant. How can I help you today?"
+  utter_goodbye:
+    - text: "Stay healthy! Goodbye 👋"
+
+actions:
+  - action_provide_symptoms
+  - action_vaccine_schedule
