@@ -1,0 +1,23 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hi
+    - hello
+    - hey
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+
+- intent: ask_symptoms
+  examples: |
+    - What are the symptoms of [malaria](disease)?
+    - Tell me signs of [dengue](disease).
+
+- intent: ask_vaccine
+  examples: |
+    - When should I take [polio](vaccine) vaccine?
+    - Tell me about [covid](vaccine) vaccination
