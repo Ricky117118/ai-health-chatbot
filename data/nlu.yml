@@ -8,36 +8,41 @@ nlu:
     - hey
     - good morning
     - good evening
+    - hey there
+    - hi there
 
 - intent: goodbye
   examples: |
     - bye
     - goodbye
-    - see you
     - see you later
-    - take care
+    - talk to you later
+    - see ya
 
 - intent: how_are_you
   examples: |
     - how are you
+    - how are you doing
     - how's it going
-    - how do you do
     - what's up
+    - how are you feeling
 
 - intent: disease_symptoms
   examples: |
     - what are the symptoms of malaria
-    - tell me signs of covid
-    - how do I know if I have dengue
-    - what are the symptoms of flu
-    - I have a headache and fever, what could it be
-    - tell me the signs of tuberculosis
-    - I feel tired and have muscle pain
-    - I am feverish, what should I do
+    - tell me the signs of covid
+    - what are dengue symptoms
+    - what are the flu symptoms
+    - I have headache and fever, what could it be
+    - tell me about tuberculosis symptoms
+    - list the symptoms of common diseases
+    - I feel tired and have a cough
 
 - intent: health_advice
   examples: |
-    - what should I do if I have a fever
-    - how can I reduce my headache
-    - how to treat cold
-    - what medicine should I take for cough
+    - what should I do for a fever
+    - how to reduce headache
+    - any tips for cold
+    - how can I stop coughing
+    - give me some health advice
+    - what should I do when I have muscle pain
